@@ -1,10 +1,21 @@
 import React from 'react';
+import logo from '../../public/fieldnotes.png';
+import { HappyIcon } from './icons';
 
 const App = (): React.ReactElement => {
   return (
-    <>
-      <div>Landing page</div>
-    </>
+    <div className="relative flex flex-row p-8">
+      <div className="absolute flex flex-row gap-4 items-center">
+        <img className="w-16 h-16" src={logo} />
+        <div className="text-2xl font-bold">fieldnotes</div>
+      </div>
+      <div className="w-full pt-16 flex flex-col items-center">
+        <div className="flex flex-col items-center">
+          <HappyIcon className="w-24 h-24" />
+          <div className="text-xl">Coming soon</div>
+        </div>
+      </div>
+    </div>
   );
 };
 
