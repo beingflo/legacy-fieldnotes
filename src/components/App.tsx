@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../public/fieldnotes.png';
+import logo from '/fieldnotes.png';
 import { HappyIcon } from './icons';
 
 const App = (): React.ReactElement => {
