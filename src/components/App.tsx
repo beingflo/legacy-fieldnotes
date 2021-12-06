@@ -15,7 +15,6 @@ const App = (): React.ReactElement => {
           <HappyIcon className="w-24 h-24" />
           <div className="text-xl">Coming soon :)</div>
         </div>
-      </div>
     </div>
   );
 };
