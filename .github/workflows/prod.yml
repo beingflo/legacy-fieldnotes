@@ -29,3 +29,13 @@ jobs:
         uses: borales/actions-yarn@v2.3.0
         with:
           cmd: build
+          
+      - name: Deploy to prod server
+        uses: easingthemes/ssh-deploy@main
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
+          SOURCE: "dist/"
+          REMOTE_HOST: ${{ secrets.SERVER_HOST }}
+          REMOTE_USER: ${{ secrets.SERVER_USER }}
+          TARGET: "~/test"
+          EXCLUDE: "/dist/, /node_modules/"
