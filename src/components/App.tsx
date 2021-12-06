@@ -13,7 +13,7 @@ const App = (): React.ReactElement => {
       <div className="w-full pt-40 sm:pt-16 flex flex-col items-center">
         <div className="flex flex-col items-center">
           <HappyIcon className="w-24 h-24" />
-          <div className="text-xl">Coming soon</div>
+          <div className="text-xl">Coming soon!</div>
         </div>
       </div>
     </div>
