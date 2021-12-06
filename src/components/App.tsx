@@ -3,7 +3,7 @@ import logo from '/fieldnotes.png';
 import { HappyIcon } from './icons';
 import '../style.css';
 
-const App = (): React.ReactElement => {
+const App = (): string => {
   return (
     <div className="relative flex flex-row p-8">
       <div className="absolute flex flex-row gap-4 items-center">
@@ -15,6 +15,7 @@ const App = (): React.ReactElement => {
           <HappyIcon className="w-24 h-24" />
           <div className="text-xl">Coming soon :)</div>
         </div>
+      </div>
     </div>
   );
 };
