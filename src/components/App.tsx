@@ -3,7 +3,7 @@ import logo from '/fieldnotes.png';
 import { HappyIcon } from './icons';
 import '../style.css';
 
-const App = (): string => {
+const App = (): React.ReactElement => {
   return (
     <div className="relative flex flex-row p-8">
       <div className="absolute flex flex-row gap-4 items-center">
