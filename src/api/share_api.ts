@@ -1,9 +1,9 @@
-import config from '../config.json';
 import { mapError } from './index';
 import { PublicationResult } from './types';
 
-const SHARE_URL = `${config.api_url}/shares`;
-const PUBLICATION_URL = `${config.api_url}/publications`;
+const API_URL = import.meta.env.VITE_API_URL;
+const SHARE_URL = `${API_URL}/shares`;
+const PUBLICATION_URL = `${API_URL}/publications`;
 
 export const access_share = (
   id: string
